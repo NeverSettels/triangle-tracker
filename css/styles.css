@@ -1,0 +1,23 @@
+@keyframes text-color {
+  0% {
+    color: orangered;
+    background-color: blue;
+  }
+  50% {
+    color: red;
+    background-color: green;
+    transform: rotate(10deg);
+  }
+  70% {
+    color: purple;
+    background-color: blue;
+  }
+  100% {
+    color: orangered;
+    background-color: green;
+  }
+}
+
+.red {
+  animation: text-color 1s linear infinite;
+}

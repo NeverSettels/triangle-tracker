@@ -4,6 +4,7 @@ $(document).ready(function() {
     var one = parseInt($('input#one').val())
     var two = parseInt($('input#two').val())
     var three = parseInt($('input#three').val())
+    //gets the result
     var result = ''
     if (one === two && two === three) {
       result = 'equilateral'
@@ -19,8 +20,10 @@ $(document).ready(function() {
         }
       }
     }
+
+    //tells user correct result
     if (result !== 'not a triangle') {
-      $('#result').html(`<h3>This is ${result}</h3>
+      $('#result').html(`<h3 class="red">This is ${result}</h3>
       <h2>Good job</h2>`)
     } else {
       alert('not a triangle dummy')
